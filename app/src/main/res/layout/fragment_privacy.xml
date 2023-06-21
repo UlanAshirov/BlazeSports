@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#131c29"
+    tools:context=".ui.fragments.privacy.PrivacyFragment">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_privacy_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_margin="12dp"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        app:iconPadding="0dp"
+        android:insetLeft="0dp"
+        android:backgroundTint="#e9153a"
+        android:insetTop="0dp"
+        android:insetRight="0dp"
+        android:insetBottom="0dp"
+        app:icon="@drawable/ic_back"
+        app:iconSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Policy Privacy"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:id="@+id/privacy"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="@id/btn_privacy_back"
+        app:layout_constraintBottom_toBottomOf="@id/btn_privacy_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="14dp"
+        android:text="Мы не продаем, не арендуем и не передаем вашу личную информацию третьим лицам без вашего явного согласия, за исключением случаев, предусмотренных законом. Мы можем раскрывать информацию третьим лицам, таким как партнеры и поставщики услуг, только в случаях, когда это необходимо для предоставления вам наших услуг и обеспечения их качества.
+Мы принимаем все необходимые меры для защиты вашей личной информации от несанкционированного доступа, использования или раскрытия. Мы используем современные технологии и процедуры безопасности, чтобы обеспечить конфиденциальность и целостность ваших данных."
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btn_privacy_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold" />
+</androidx.constraintlayout.widget.ConstraintLayout>

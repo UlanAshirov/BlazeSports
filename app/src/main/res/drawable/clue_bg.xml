@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingDefaultResource">
+
+    <!-- Drop Shadow Stack -->
+    <item>
+        <shape>
+            <padding
+                android:bottom="1.5dp"
+                android:left="1.5dp"
+                android:right="1.5dp"
+                android:top="1.5dp" />
+
+            <solid android:color="#1EA1A1A1" />
+
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="1.5dp"
+                android:left="1.5dp"
+                android:right="1.5dp"
+                android:top="1.5dp" />
+
+            <solid android:color="#2D707171" />
+
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="1.5dp"
+                android:left="1.5dp"
+                android:right="1.5dp"
+                android:top="1.5dp" />
+
+            <solid android:color="#379FA1A1" />
+
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="1.5dp"
+                android:left="1.5dp"
+                android:right="1.5dp"
+                android:top="1.5dp" />
+
+            <solid android:color="#40B1AEAE" />
+
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <padding
+                android:bottom="1.5dp"
+                android:left="1.5dp"
+                android:right="1.5dp"
+                android:top="1.5dp" />
+
+            <solid android:color="#59646464" />
+
+            <corners android:radius="8dp" />
+        </shape>
+    </item>
+
+    <!-- Background -->
+    <item android:id="@+id/itemShape">
+        <shape>
+            <gradient
+                android:angle="0"
+                android:endColor="#131c29"
+                android:startColor="#131c29" />
+            <corners android:radius="8dp" />
+            <size
+                android:width="90dp"
+                android:height="90dp" />
+        </shape>
+    </item>
+
+</layer-list>

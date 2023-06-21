@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/menuFragment">
+
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.example.blazesports.ui.fragments.menu.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <fragment
+        android:id="@+id/quizFragment"
+        android:name="com.example.blazesports.ui.fragments.quiz.QuizFragment"
+        android:label="fragment_quiz"
+        tools:layout="@layout/fragment_quiz" />
+    <fragment
+        android:id="@+id/settingFragment"
+        android:name="com.example.blazesports.ui.fragments.setting.SettingFragment"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.blazesports.ui.fragments.result.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" />
+    <dialog
+        android:id="@+id/clueFragment"
+        android:name="com.example.blazesports.ui.fragments.clue.ClueFragment"
+        android:label="ClueFragment" />
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.example.blazesports.ui.fragments.privacy.PrivacyFragment"
+        android:label="fragment_privacy"
+        tools:layout="@layout/fragment_privacy" />
+</navigation>

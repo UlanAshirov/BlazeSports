@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#131c29"
+    tools:context=".ui.fragments.result.ResultFragment">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Your quiz result"
+        android:textColor="@color/white"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/correct"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/correct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Correct:"
+        android:textColor="#72FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tv_title"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_count_correct_answers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/correct"
+        app:layout_constraintStart_toEndOf="@id/correct"
+        app:layout_constraintTop_toTopOf="@id/correct"
+        tools:text="2" />
+
+    <TextView
+        android:id="@+id/wrong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wrong:"
+        android:textColor="#72FFFFFF"
+        android:textSize="18sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="@id/correct"
+        app:layout_constraintTop_toBottomOf="@id/correct" />
+
+    <TextView
+        android:id="@+id/tv_count_wrong_answers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/wrong"
+        app:layout_constraintStart_toEndOf="@id/wrong"
+        app:layout_constraintTop_toTopOf="@id/wrong"
+        tools:text="1" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time:"
+        android:textColor="#72FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/tv_title"
+        app:layout_constraintTop_toTopOf="@id/correct" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/time"
+        app:layout_constraintStart_toEndOf="@id/time"
+        app:layout_constraintTop_toTopOf="@id/time"
+        tools:text="00:34" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score:"
+        android:textColor="#72FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@id/time"
+        app:layout_constraintTop_toTopOf="@id/wrong"
+        app:layout_constraintBottom_toBottomOf="@id/wrong"
+        />
+
+    <TextView
+        android:id="@+id/tv_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/score"
+        app:layout_constraintStart_toEndOf="@id/score"
+        app:layout_constraintTop_toTopOf="@id/score"
+        tools:text="3" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_play_again"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#e9153a"
+        android:layout_marginHorizontal="34dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/play_again"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/btn_result_exit"
+        app:layout_constraintTop_toBottomOf="@id/score"
+        android:padding="8dp"
+        android:textSize="24sp"
+        app:shapeAppearanceOverlay="@style/DiamondButton" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_result_exit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#e9153a"
+        android:layout_marginHorizontal="34dp"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/exit"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_play_again"
+        android:padding="8dp"
+        android:textSize="24sp"
+        app:shapeAppearanceOverlay="@style/DiamondButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
